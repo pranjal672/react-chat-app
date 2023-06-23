@@ -1,0 +1,127 @@
+.chat {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-info {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(287, 37%, 37%, 50%);
+  color: white;
+}
+
+.chat-info span {
+  font-size: 1.125rem;
+}
+
+.chat-info .chat-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.chat-info .chat-icons svg {
+  width: 2.225rem;
+  aspect-ratio: 1;
+  color: white;
+}
+
+.messages {
+  padding: 1rem;
+  background-color: lightgray;
+  flex: 1;
+  overflow-y: scroll;
+}
+
+.message {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.message .message-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.message .message-info span {
+  color: gray;
+}
+
+.message .message-info img {
+  width: 2.225rem;
+  aspect-ratio: 1;
+  background-color: white;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.message .message-content {
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.message .message-content p {
+  background-color: white;
+  padding: 0.5rem;
+  width: fit-content;
+  border-radius: 0px 10px 10px 10px;
+}
+
+.message .message-content img {
+  width: 50%;
+}
+
+.owner {
+  flex-direction: row-reverse;
+}
+
+.owner .message-content {
+  align-items: flex-end;
+}
+
+.owner .message-content p {
+  background-color: #b19afe;
+  color: white;
+}
+
+.input {
+  background-color: white;
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.input > input {
+  padding: 1rem;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+.input .send {
+  padding: 0.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.input .send svg {
+  width: 2.225rem;
+  aspect-ratio: 1;
+  color: grey;
+  cursor: pointer;
+}
+
+.input .send button {
+  padding: 1rem;
+  color: #fff;
+  background-color: #b19afe;
+  border-radius: 0.1rem;
+}
