@@ -11,8 +11,6 @@ const Message = ({ message }) => {
         divRef.current.scrollIntoView({ behavior: "smooth" })
     }, [message])
 
-    console.log(message.text)
-
     return (
         <div ref={divRef} className={`message ${message.senderId === currentUser.uid && "owner"}`}>
             <div className="message-info">

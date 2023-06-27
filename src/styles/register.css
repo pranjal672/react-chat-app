@@ -1,12 +1,13 @@
 .form-container {
   background-color: #b19afe;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .form-wrapper {
+  max-width: 100%;
   background-color: white;
   padding: 2rem 6rem;
   display: flex;

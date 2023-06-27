@@ -125,3 +125,13 @@
   background-color: #b19afe;
   border-radius: 0.1rem;
 }
+
+@media (max-width: 768px) {
+  .input {
+    padding: 0.5rem;
+  }
+
+  .input > input {
+    width: 50%;
+  }
+}

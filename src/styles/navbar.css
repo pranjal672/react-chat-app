@@ -17,6 +17,7 @@
   align-items: center;
   gap: 1rem;
   font-size: 1.125rem;
+  flex-wrap: wrap;
 }
 
 .navbar .user img {
@@ -32,4 +33,14 @@
   color: #fff;
   background-color: #b19afe;
   border-radius: 0.1rem;
+}
+
+@media (max-width: 768px) {
+  .navbar .logo {
+    display: none;
+  }
+
+  .input > input::placeholder {
+    font-size: 10px;
+  }
 }
