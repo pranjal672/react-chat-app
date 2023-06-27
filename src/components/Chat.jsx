@@ -9,16 +9,29 @@ const Chat = () => {
 
     return (
         <div className="chat">
-            <div className="chat-info">
-                <span>{data.user?.displayName}</span>
-                <div className="chat-icons">
-                    <FaVideo />
-                    <FaUserPlus />
-                    <FaEllipsisH />
-                </div>
-            </div>
-            <Messages />
-            <Input />
+            {Object.keys(data.user).length > 0 ?
+                <>
+                    <div className="chat-info">
+                        <span>{data.user?.displayName}</span>
+                        <div className="chat-icons">
+                            <FaVideo />
+                            <FaUserPlus />
+                            <FaEllipsisH />
+                        </div>
+                    </div>
+                    <Messages />
+                    <Input />
+                </>
+                : <div style={{
+                    backgroundColor: "white",
+                    color: "grey",
+                    width: "100%",
+                    height: "100%",
+                    display: "grid",
+                    placeItems: "center",
+                    fontSize: "2.5rem",
+                    padding: "1rem"
+                }}><span>Select a user to start chat!</span></div>}
         </div>
     )
 }
