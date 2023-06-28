@@ -20,7 +20,7 @@ const Chat = () => {
                         </div>
                     </div>
                     <Messages />
-                    <Input />
+                    <Input key={data?.chatId} />
                 </>
                 : <div style={{
                     backgroundColor: "white",
