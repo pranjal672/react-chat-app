@@ -25,9 +25,3 @@ svg {
   font-family: "Poppins", sans-serif;
   line-height: 1.6;
 }
-
-@media (max-width: 768px) {
-  :root {
-    font-size: 12px;
-  }
-}
